@@ -1,0 +1,55 @@
+.container {
+    height: 72px;
+    padding: 30px;
+    background-color: var(--prime-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  .nav {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--main);
+    text-decoration: none;
+    transition: all var(--transition);
+  }
+  
+  .activelink {
+    color: var(--hover-button);
+  }
+  .link:hover {
+    color: var(--hover-button);
+  }
+  .filterBtn {
+    border: none;
+    width: 32px;
+    height: 32px;
+    background-color: inherit;
+  }
+  .filterIcon {
+    fill: var(--secondary);
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      height: 72px;
+      padding: 24px 64px;
+      gap: 250px;
+      justify-content: space-between;
+    }
+  
+    .link {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .nav {
+      gap: 32px;
+    }
+  }

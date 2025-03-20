@@ -1,0 +1,40 @@
+.link {
+    display: block;
+    height: 36px;
+    border-radius: 200px;
+    border: none;
+    padding: 8px 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: var(--text);
+    background-color: var(--button);
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: center;
+    transition: all var(--transition);
+  }
+  .link:hover {
+    background-color: var(--hover-button);
+  }
+  @media (min-width: 768px) {
+    .link {
+      height: 48px;
+      padding: 12px 32px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .link {
+      height: 56px;
+      padding: 16px 40px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
