@@ -1,0 +1,12 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 12px;
+    padding-right: 12px;
+  }
+  @media (min-width: 768px) {
+    .list {
+      gap: 32px;
+    }
+  }

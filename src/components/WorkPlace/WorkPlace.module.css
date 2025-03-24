@@ -1,0 +1,63 @@
+.container {
+    padding-bottom: 80px;
+    padding-top: 32px;
+    overflow: scroll;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btn {
+    width: 145px;
+    height: 56px;
+    border: 1px solid var(--gray-light);
+    border-radius: 200px;
+    background-color: inherit;
+    padding: 16px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all var(--transition);
+  }
+  .btn:hover {
+    border: 1px solid var(--hover-button);
+  }
+  .text {
+    display: block;
+    color: var(--secondary);
+    padding-left: 100px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .filterBtn {
+    width: 32px;
+    height: 32px;
+    background-color: inherit;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: fixed;
+    top: 72px;
+    right: 10px;
+    z-index: 10;
+  }
+  .icon {
+    fill: var(--secondary);
+  }
+  .loader {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 160px;
+  }
+  @media (min-width: 768px) {
+    .container {
+      padding: 24px auto 96px 0px;
+    }
+    .filterBtn {
+      display: none;
+    }
+  }

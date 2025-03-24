@@ -1,0 +1,129 @@
+.form {
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  .locationLabel {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--secondary-text);
+    gap: 8px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .locationInput {
+    width: 360px;
+    height: 56px;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--prime-text);
+    color: var(--main);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px 20px 16px 48px;
+  }
+  .locationInput::placeholder {
+    color: var(--secondary-text);
+  }
+  .text {
+    color: var(--secondary-text);
+    margin-bottom: 32px;
+  }
+  
+  .equipmentContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+  .textBold {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--main);
+    margin-bottom: 24px;
+  }
+  .string {
+    width: 360px;
+    margin-bottom: 24px;
+    border: 1px solid var(--gray-light);
+  }
+  
+  .box {
+    width: 112px;
+    height: 96px;
+    border-radius: 12px;
+    border: 1px solid var(--gray-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+  .equipmentList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .checkbox {
+    display: none;
+  }
+  .activeBox {
+    border: 1px solid var(--button);
+  }
+  .typeContainer {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 12px;
+  }
+  .fueltext {
+    text-align: center;
+  }
+  
+  /* ICONS */
+  .iconLocation {
+    fill: var(--main);
+    position: absolute;
+    left: 20px;
+    top: 60px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  .iconVcehicle {
+    fill: var(--main);
+  }
+  
+  @media (min-width: 768px) {
+    .form {
+      padding: 0;
+      width: 312px;
+    }
+    .locationInput {
+      width: 312px;
+    }
+    .string {
+      width: 312px;
+    }
+    .box {
+      width: 96px;
+    }
+  }
+  @media (min-width: 1440px) {
+    .form {
+      margin-bottom: 48px;
+      padding: 0;
+      width: 360px;
+    }
+    .locationInput {
+      width: 360px;
+    }
+    .string {
+      width: 360px;
+    }
+    .box {
+      width: 112px;
+    }
+  }

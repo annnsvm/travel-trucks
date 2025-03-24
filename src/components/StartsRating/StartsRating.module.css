@@ -1,0 +1,17 @@
+.stars {
+    display: flex;
+  }
+  
+  .star {
+    font-size: 12px;
+    color: var(--badges);
+  }
+  
+  .filled {
+    color: #ffc531;
+  }
+  @media (min-width: 768px) {
+    .star {
+      font-size: 16px;
+    }
+  }

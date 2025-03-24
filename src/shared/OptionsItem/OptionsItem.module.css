@@ -1,0 +1,30 @@
+.listItem {
+    padding: 6px 8px;
+    height: 20px;
+    background-color: var(--li);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font-size: 10px;
+  }
+  .icon {
+    width: 10px;
+    height: 10px;
+  }
+  @media (min-width: 768px) {
+  }
+  @media (min-width: 1200px) {
+    .listItem {
+      padding: 12px 18px;
+      height: 48px;
+      background-color: var(--li);
+      gap: 8px;
+      font-size: 14px;
+    }
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+  }

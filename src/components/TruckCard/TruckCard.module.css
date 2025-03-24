@@ -1,0 +1,178 @@
+.container {
+    width: 320px;
+    border: 1px solid var(--gray-light);
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    gap: 8px;
+    max-height: 260px;
+    box-sizing: border-box;
+  }
+  .img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  .infoField {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow: hidden;
+  }
+  .textInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .titleWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .title,
+  .price {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--main);
+  }
+  .title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: 160px;
+  }
+  .priceContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+  }
+  .heartBtn {
+    border: none;
+    padding: 0;
+    background-color: inherit;
+    transition: all var(--transition);
+  }
+  
+  .heartBtn:hover .iconHeart {
+    fill: var(--hover-button);
+  }
+  .active .iconHeart {
+    fill: var(--hover-button);
+  }
+  .ratingWrapper {
+    display: flex;
+    gap: 8px;
+  }
+  .locationContainer,
+  .ratingContainer {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    color: var(--main);
+    font-weight: 400;
+    line-height: 14px;
+    font-size: 10px;
+  }
+  .iconLocation {
+    fill: var(--main);
+  }
+  .text {
+    color: var(--secondary);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    font-size: 10px;
+  }
+  .list {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 400px;
+      max-height: 400px;
+      padding: 12px;
+      display: flex;
+      gap: 8px;
+      max-height: 260px;
+      box-sizing: border-box;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 800px;
+      max-height: 600px;
+      padding: 24px;
+      display: flex;
+      gap: 24px;
+    }
+    .img {
+      width: 292px;
+      height: 320px;
+    }
+    .infoField {
+      gap: 24px;
+    }
+    .textInfo {
+      gap: 24px;
+    }
+    .titleContainer {
+      gap: 4px;
+    }
+    .titleWrapper {
+      flex-direction: row;
+    }
+    .title,
+    .price {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    .title {
+      width: 320px;
+    }
+    .priceContainer {
+      align-items: center;
+      gap: 12px;
+    }
+    .ratingWrapper {
+      gap: 16px;
+    }
+    .locationContainer,
+    .ratingContainer {
+      line-height: 24px;
+      font-size: 16px;
+    }
+    .text {
+      color: var(--secondary);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      max-width: 100%;
+      font-size: 14px;
+    }
+    .list {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+  }
+  @media (min-width: 1440px) {
+    .container {
+      width: 888px;
+      max-height: 368px;
+    }
+  }

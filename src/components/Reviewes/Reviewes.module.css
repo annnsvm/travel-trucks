@@ -1,0 +1,72 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: auto;
+    max-width: 50%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .nameContainer {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--badges);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--button);
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .name {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--main);
+    margin-bottom: 2px;
+  }
+  .text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--secondary);
+  }
+  @media (min-width: 1200px) {
+    .list {
+      gap: 44px;
+      height: 640px;
+      width: 632px;
+    }
+    .container {
+      gap: 24px;
+    }
+    .nameContainer {
+      gap: 16px;
+    }
+    .avatar {
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
+    }
+    .name {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--main);
+      margin-bottom: 4px;
+    }
+    .text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }

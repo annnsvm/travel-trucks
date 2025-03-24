@@ -18,6 +18,9 @@ export default function Header() {
         <NavLink className={makeLinkClass} to="/catalog" end>
           Catalog
         </NavLink>
+        <NavLink className={makeLinkClass} to="/favorites" end>
+          Favorites
+        </NavLink>
       </nav>
     </header>
   );

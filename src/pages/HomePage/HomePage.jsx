@@ -1,5 +1,5 @@
-import css from "../pages/HomePage.module.css";
-import LinkButton from "../shared/LinkButton/LinkButton";
+import css from "./HomePage.module.css";
+import LinkButton from "../../shared/LinkButton/LinkButton";
 
 export default function HomePage() {
   return (
